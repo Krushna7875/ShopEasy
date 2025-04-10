@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo logo-glow">ShopEasy</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="product-detail">
+    <div class="container detail-grid">
+      <div class="detail-image">
+        <img src="boat.jpg" alt="Wireless Headphones">
+      </div>
+      <div class="detail-info">
+        <h2>Wireless Headphones</h2>
+        <p class="price">$Price</p>
+        <p class="description">
+          Product description goes here. Explain what makes it great, useful, or stylish.
+        </p>
+        <button class="btn" onclick="addToCart('Wireless Headphones', 89.99)">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Popup Cart -->
+  <div class="cart-popup" id="popup">
+    <div class="cart-content">
+      <span class="close-popup" onclick="closePopup()">&times;</span>
+      <h2>✅ Item Added to Cart!</h2>
+      <p>Product: <span id="popup-product-name"></span></p>
+      <p>Price: $<span id="popup-product-price"></span></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function addToCart(productName, productPrice) {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const item = { name: productName, price: productPrice, quantity: 1 };
+      cart.push(item);
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      // Show popup
+      document.getElementById("popup-product-name").textContent = productName;
+      document.getElementById("popup-product-price").textContent = productPrice;
+      document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+
+    // Optional: Close popup after 3 seconds
+    document.addEventListener('click', function(e) {
+      if (e.target.classList.contains('close-popup')) closePopup();
+    });
+  </script>
+</body>
+</html>

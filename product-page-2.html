@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page 2 - ShopEasy</title>
+  <style>
+  body {
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #00ffff);
+  background-size: 600% 600%;
+  animation: gradientMove 10s ease infinite;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0 20px;
+}
+
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: #111;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      color: #00ffff;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: #00ffff;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #00ffff;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .product-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 255, 255, 0.15);
+      border-radius: 16px;
+      width: 260px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px #00ffff88;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .product-card .price {
+      color: #0ff;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      color: #ccc;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .add-to-cart-btn {
+      background-color: #00ffff;
+      color: #111;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 0 12px #00ffff88;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .add-to-cart-btn:hover {
+      background-color: #00cccc;
+      box-shadow: 0 0 20px #00ffffaa;
+    }
+
+    .next-btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #00ffff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      box-shadow: 0 0 15px #00ffff80;
+      transition: 0.3s;
+      margin-bottom: 50px;
+    }
+
+    .next-btn:hover {
+      background: #00cccc;
+    }
+  </style>
+</head>
+<body>
+   <header class="navbar">
+  <div class="logo-badge">
+ <span class="logo">✨ ShopEasy</span>
+</div>
+  <nav class="nav-links">
+    <a href="index.html.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+</header>
+
+<h2 class="magic-title reveal-title">🛍️ Explore Our Collection</h2>
+
+
+
+  <div class="product-grid">
+    <!-- Product 16 to 25 -->
+    <!-- 10 New Products Added -->
+    <!-- Replace text/images later -->
+    <!-- Sample Layout -->
+    
+    <!-- Begin additional product cards -->
+    <!-- Only placeholder values -->
+    <!-- Product 16 to 25 -->
+    
+    <!-- Existing 3 -->
+    <div class="product-card">
+      <img src="product16.jpg" alt="ULTRADART USB Type C Cable 6.5 A 1 m">
+      <h3>ULTRADART USB Type C Cable 6.5 A 1 m</h3>
+      <p class="price">$35.99</p>
+      <p>ShopEasy.</p>
+ <button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="product17.jpg" alt="Apple iPhone 16 Pro (Desert Titanium, 128 GB)">
+      <h3>Apple iPhone 16 Pro (Desert Titanium, 128 GB)</h3>
+      <p class="price">$48.50</p>
+      <p>ShopEasy</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+    </div>
+    <div class="product-card">
+      <img src="product18.jpg" alt="Micronised Creatine Monohydrate">
+      <h3>Micronised Creatine Monohydrate</h3>
+      <p class="price">$21.99</p>
+      <p>ShopEasy</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+    </div>
+
+    <!-- New ones -->
+    <div class="product-card">
+      <img src="product19.jpg" alt="Hard PLastic For tennis Ball PVC/Plastic Cricket Bat ">
+      <h3>Hard PLastic For tennis Ball PVC/Plastic Cricket Bat </h3>
+      <p class="price">$54.99</p>
+      <p>ShopEasy.</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+    </div>
+    <div class="product-card">
+      <img src="product20.jpg" alt=" Rechargeable Remote car ">
+      <h3> Rechargeable Remote car </h3>
+      <p class="price">$42.49</p>
+      <p>ShooEasy</p>
+    <button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="product21.jpg" alt="HG WORLD Retro S10 Controller Digital Game ">
+      <h3>HG WORLD Retro S10 Controller Digital Game </h3>
+      <p class="price">$31.00</p>
+      <p>ShopEasy.</p>
+      <button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+    </div>
+    <div class="product-card">
+      <img src="product22.jpg" alt="SONY Playstation Brand New Ps4 Slim Console 1TB">
+      <h3>SONY Playstation Brand New Ps4 Slim Console 1TB</h3>
+      <p class="price">$66.66</p>
+      <p>ShopEasy.</p>
+     <button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="product23.jpg" alt="HP UHS-I U1 128 GB MicroSDHC">
+      <h3>HP UHS-I U1 128 GB MicroSDHC</h3>
+      <p class="price">$77.77</p>
+      <p>ShopEasy</p>
+     <button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+    </div>
+    <div class="product-card">
+      <img src="product24.jpg" alt="boAt 20000 mAh 22.5 W Power Bank">
+      <h3>boAt 20000 mAh 22.5 W Power Bank</h3>
+      <p class="price">$88.88</p>
+      <p>ShopEasy.</p>
+      <button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+    </div>
+    <div class="product-card">
+      <img src="product25.jpg" alt="Godrej aer O">
+      <h3>Godrej aer O</h3>
+      <p class="price">$99.99</p>
+      <p>ShopEasy.</p>
+    <button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+    </div>
+  </div>
+  <div style="text-align: center;">
+    <a href="product.html" class="next-btn">← Back to Page 1</a>
+  </div>
+<!-- Cart Popup -->
+<div id="cart-popup" class="cart-popup">✔️ Product added to cart!</div>
+<div id="cart-popup" class="cart-popup">✔️ Product added to cart!</div>
+<style>
+  .cart-popup {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #00ffff;
+    color: #111;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 0 20px #00ffffaa;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  .cart-popup.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+ /* other styles like .cart-popup, .product-card, etc. */
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.magic-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 50px 0 30px;
+  color: #00ffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #00ffff, #ffffff, #00ffff);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineText 4s linear infinite;
+  position: relative;
+}
+
+@keyframes shineText {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.magic-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 60px 0 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #00ffff, #ffffff, #00ffff);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineText 5s linear infinite, fadeIn 1s ease forwards;
+  opacity: 0;
+  position: relative;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.magic-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: #00ffff;
+  border-radius: 2px;
+  box-shadow: 0 0 8px #00ffff, 0 0 20px #00ffffaa;
+}
+
+@keyframes shineText {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.logo-badge {
+  background: rgba(0, 255, 255, 0.1);
+  padding: 10px 24px;
+  border-radius: 50px;
+  box-shadow: 0 0 12px #00ffff55, 0 0 24px #00ffff33 inset;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.logo-badge:hover {
+  box-shadow: 0 0 20px #00ffffaa, 0 0 40px #00ffff55 inset;
+  transform: scale(1.03);
+}
+
+
+</style>
+
+
+
+
+<!-- Cart Popup Script -->
+<script>
+  function showCartPopup() {
+    const popup = document.getElementById("cart-popup");
+    popup.classList.add("show");
+    setTimeout(() => {
+      popup.classList.remove("show");
+    }, 2500);
+  }
+</script>
+
+
+</body>
+</html>

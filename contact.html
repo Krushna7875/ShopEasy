@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us - ShopEasy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="contact-page">
+<div class="orb-bg">
+  <div class="orb"></div>
+  <div class="orb"></div>
+  <div class="orb"></div>
+</div>
+  <header class="contact-page">
+    <div class="logo logo-glow">ShopEasy</div>
+    <nav class="nav-links">
+      <a href="index.html.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+<div class="orb-bg">
+  <div class="orb"></div>
+  <div class="orb"></div>
+  <div class="orb"></div>
+</div>
+
+  <main class="contact-section scroll-reveal">
+    <h2>📬 Contact Us</h2>
+    <p>We'd love to hear from you. Fill out the form below and we’ll get back to you shortly.</p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>📞 +91 9699744134 </p>
+      <p>✉️ support@shopeasy.com</p>
+      <p>📍 @shopeasy GT-123 , Mumbai-414603 , Bombay , India </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

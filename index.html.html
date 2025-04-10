@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShopEasy - Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<body>
+
+ <header class="navbar">
+  <div class="brand-logo">
+    <span class="brand-glow">✨ ShopEasy</span>
+  </div>
+  <nav class="nav-links">
+ <a href="index.html.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+</nav>
+
+
+  </header>
+<section class="hero-banner-css">
+  <div class="hero-glow-background"></div>
+  <div class="hero-text">
+    <h2>🔥 Trending Deals of the Week</h2>
+    <p>Top picks just for you — stylish, affordable, and delivered fast.</p>
+    <a href="#products" class="btn">Explore Now</a>
+  </div>
+</section>
+  <main class="products">
+   <div class="product-container">
+  <div class="product-card">
+      <img src="boat.jpg" alt="Wireless Headphones">
+      <h2>Wireless Headphones</h2>
+      <p class="price">$999.99</p>
+      <a href="product4.html">
+       <button>View Details</button></a>
+    </div>
+  <div class="product-card">
+      <img src="sneakers.jpg" alt="Cool Sneakers">
+      <h2>Cool Sneakers</h2>
+      <p class="price">$60.99</p>
+      <a href="product1.html"><button>View Details</button></a>
+    </div>
+  <div class="product-card">
+      <img src="watch.jpg" alt="Smart Watch">
+      <h2>Smart Watch</h2>
+      <p class="price">$129.99</p>
+      <a href="product2.html">
+      <button>View Details</button></a>
+    </div>
+  <div class="product-card">
+      <img src="backpack.jpg" alt="Modern Backpack">
+      <h2>Modern Backpack</h2>
+      <p class="price">$98.99</p>
+      <a href="product3.html"><button>View Details</button></a>
+    </div>
+  </main>
+<section class="features">
+  <div class="feature-box">
+    <h3>🔥 Trending Deals</h3>
+    <p>Catch the latest and hottest deals updated daily!</p>
+  </div>
+  <div class="feature-box">
+    <h3>🚚 Fast Delivery</h3>
+    <p>Lightning-fast shipping across the country.</p>
+  </div>
+  <div class="feature-box">
+    <h3>💳 Secure Payments</h3>
+    <p>All major cards & wallets supported with 100% security.</p>
+  </div>
+</section>
+
+<section class="footer-banner">
+  <h3>Thanks for shopping with us!</h3>
+  <p>We bring you the latest trends, fast delivery, and glowing deals every day.</p>
+
+</section>
+<style>
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  animation: floatUp 1s ease-out forwards;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.brand-glow {
+  font-size: 2.8rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00ffff, #ffffff, #00ffff);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineText 4s linear infinite, pulseGlow 2s ease-in-out infinite;
+  text-shadow: 0 0 10px #00ffff80;
+}
+
+/* Text Shine Effect */
+@keyframes shineText {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Floating Fade-in on Load */
+@keyframes floatUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse Glow */
+@keyframes pulseGlow {
+  0% { text-shadow: 0 0 5px #00ffff66; }
+  50% { text-shadow: 0 0 25px #00ffffcc; }
+  100% { text-shadow: 0 0 5px #00ffff66; }
+}
+</style>
+</body>
+</html>
+

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - ShopEasy</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body.about-page {
+      background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
+      color: #f1f1f1;
+    }
+
+    .about-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,255,255,0.1);
+      text-align: center;
+    }
+
+    .about-container h2 {
+      font-size: 2.5rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      margin-bottom: 20px;
+    }
+
+    .about-container p {
+      font-size: 1.1rem;
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .about-features {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .feature-box {
+      background: rgba(0, 255, 255, 0.05);
+      border: 1px solid rgba(0, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 16px #00ffff88;
+    }
+
+    .feature-box h3 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+
+    .team-section {
+      margin-top: 60px;
+    }
+
+    .team-section h2 {
+      font-size: 2rem;
+      color: #00ffff;
+      margin-bottom: 30px;
+      text-shadow: 0 0 8px #00ffff;
+    }
+
+    .team-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      scroll-behavior: smooth;
+    }
+
+    .team-card {
+      width: 200px;
+      min-width: 200px;
+      height: 280px;
+      perspective: 1000px;
+    }
+
+    .team-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .team-card:hover .team-inner {
+      transform: rotateY(180deg);
+    }
+
+    .team-front, .team-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .team-front img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 2px solid #00ffff;
+    }
+
+    .team-front h4,
+    .team-front p {
+      color: #00ffff;
+      margin: 5px 0;
+    }
+
+    .team-back {
+      transform: rotateY(180deg);
+      color: #fff;
+    }
+
+    .team-back p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .team-back a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body class="about-page">
+  <header class="navbar">
+    <div class="logo logo-glow">ShopEase</div>
+    <nav class="nav-links">
+       <a href="index.html.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="about-container">
+    <h2>✨ About ShopEasy</h2>
+    <p>At ShopEasy, we believe shopping should be smooth, fun, and full of surprises. Founded with the vision to blend style and simplicity, we offer handpicked collections, lightning-fast delivery, and deals that glow as bright as your screen.</p>
+
+    <p>We’re a team of passionate creators, techies, and trendsetters who believe in making quality accessible and enjoyable for everyone. Whether you're buying your next gadget or a stylish must-have, we're here to make your experience seamless.</p>
+
+    <div class="about-features">
+      <div class="feature-box">
+        <h3>🚀 Fast Shipping</h3>
+        <p>Your orders delivered to your doorstep in record time.</p>
+      </div>
+      <div class="feature-box">
+        <h3>💎 Premium Quality</h3>
+        <p>Only the best products curated and quality-checked.</p>
+      </div>
+      <div class="feature-box">
+        <h3>💬 24/7 Support</h3>
+        <p>We're always here to help, no matter the hour.</p>
+      </div>
+    </div>
+
+    <section class="team-section">
+      <h2>👥 Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-inner">
+            <div class="team-front">
+              <img src="Member1.jpg" alt="Krushna Bhagwat">
+              <h4>Krushna Bhagwat</h4>
+              <p>Founder & CEO</p>
+            </div>
+            <div class="team-back">
+              <p>Email: Krushna@shopeasy.com</p>
+              <p>offx_krushnya_01</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-inner">
+            <div class="team-front">
+              <img src="Member2.jpg" alt="Kartik Bhavar">
+              <h4>Kartik Bhavar</h4>
+              <p>Head of Operations</p>
+            </div>
+            <div class="team-back">
+              <p>Email: Kartik@shopeasy.com</p>
+              <p>kartik_bhawar.0440</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-inner">
+            <div class="team-front">
+              <img src="Member3.jpg" alt="Prathm Bhogavkar">
+              <h4>Prathm Bhogavkar</h4>
+              <p>Lead Designer</p>
+            </div>
+            <div class="team-back">
+              <p>Email: Prathmesh@shopeasy.com</p>
+              <p>yours_prathm_07</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-inner">
+            <div class="team-front">
+              <img src="Member4.jpg" alt="Roshan Dagadghate">
+              <h4>Roshan Dagadghate</h4>
+              <p>Marketing Specialist</p>
+            </div>
+            <div class="team-back">
+              <p>Email: Roshan@shopeasy.com</p>
+              <p>_roshya_027</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

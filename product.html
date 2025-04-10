@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page - ShopEasy</title>
+  <style>
+body {
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #00ffff);
+  background-size: 600% 600%;
+  animation: gradientMove 10s ease infinite;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0 20px;
+}
+
+
+
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffffaa;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: #00ffff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00ffff;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+    h2 {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #00ffff;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .product-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 255, 255, 0.15);
+      border-radius: 16px;
+      width: 260px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px #00ffff88;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .product-card .price {
+      color: #0ff;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      color: #ccc;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .add-to-cart-btn {
+      background-color: #00ffff;
+      color: #111;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 0 12px #00ffff88;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .add-to-cart-btn:hover {
+      background-color: #00cccc;
+      box-shadow: 0 0 20px #00ffffaa;
+    }
+
+    .next-btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #00ffff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      box-shadow: 0 0 15px #00ffff80;
+      transition: 0.3s;
+      margin-bottom: 50px;
+    }
+
+    .next-btn:hover {
+      background: #00cccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+  <div class="logo-badge">
+ <span class="logo">✨ ShopEasy</span>
+</div>
+  <nav class="nav-links">
+    <a href="index.html.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<h2 class="magic-title reveal-title">🛍️ Explore Our Collection</h2>
+
+  <div class="product-grid">
+    <!-- 15 Static Product Cards -->
+    <!-- You can swap image URLs and content later -->
+    <!-- Repeated manually for you -->
+
+    <!-- Product Cards -->
+    <!-- Replace content freely -->
+    <!-- I’m using placeholder images with labels -->
+
+    <!-- Just loop from 1 to 15 -->
+    <!-- For now, same style repeated -->
+    <!-- Example -->
+    <!-- (Copy + change if needed) -->
+
+    <!-- BEGIN -->
+    <!-- You can scroll down and count 15 items -->
+
+    <!-- I will paste just a few and you can duplicate more -->
+
+    <!-- Product 1 to 15 -->
+    <!-- You can replace names and images later -->
+    <!-- Shortened view for example -->
+
+    <!-- To keep response short, I'll paste the rest after your reply -->
+<!-- Product 1 -->
+    <div class="product-card">
+      <img src="product1.jpg" alt="SHILP KATHA Handicraft Leather Lamps">
+      <h3>SHILP KATHA Handicraft Leather Lamps</h3>
+      <p class="price">$29.99</p>
+      <p>ShopEasy</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+    </div>
+<!-- Product 2 -->
+    <div class="product-card">
+      <img src="product2.jpg" alt="ANTICMART || Motivational Water Bottle Combo Set (2L, 900ML, 300ML) |">
+      <h3>ANTICMART || Motivational Water Bottle Combo Set (2L, 900ML, 300ML) |</h3>
+      <p class="price">$39.99</p>
+      <p>ShopEasy</p>
+     <button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+    </div>
+<!-- Product 3 -->
+    <div class="product-card">
+      <img src="product3.jpg" alt="Kawn® Women Corduroy Tote Bag Canvas Shoulder Purse ">
+      <h3>Kawn® Women Corduroy Tote Bag Canvas Shoulder Purse </h3>
+      <p class="price">$49.99</p>
+      <p>ShopEasy</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+    </div>
+<!-- Product 4 -->
+<div class="product-card">
+  <img src="product4.jpg" alt="Fashion Frill Silver Couple Ring For Women Men Closed Hand Stainless Steel Promise Silver Hug Ring ">
+  <h3>Fashion Frill Silver Couple Ring For Women Men Closed Hand Stainless Steel Promise Silver Hug Ring 4</h3>
+  <p class="price">$59.99</p>
+  <p>ShopEasy</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+</div>
+
+<!-- Product 5 -->
+<div class="product-card">
+  <img src="product5.jpg" alt="VINCENT CHASE EYEWEAR">
+  <h3>VINCENT CHASE EYEWEAR</h3>
+  <p class="price">$69.99</p>
+  <p>ShopEasy</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+</div>
+
+<!-- Product 6 -->
+<div class="product-card">
+  <img src="product6.jpg" alt="Tommy Hilfiger Navy Leather Men's Wallet">
+  <h3>Tommy Hilfiger Navy Leather Men's Wallet</h3>
+  <p class="price">$34.99</p>
+  <p>ShopEasy</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+</div>
+
+<!-- Product 7 -->
+<div class="product-card">
+  <img src="product7.jpg" alt="Safari Pentagon 55 Cms Small Cabin Polypropylene">
+  <h3>Safari Pentagon 55 Cms Small Cabin Polypropylene</h3>
+  <p class="price">$22.99</p>
+  <p>ShopEasy</p>
+ <button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+</div>
+
+<!-- Product 8 -->
+<div class="product-card">
+  <img src="product8.jpg" alt="Tata Coffee Grand Premium | 100% Coffee Blend ">
+  <h3>Tata Coffee Grand Premium | 100% Coffee Blend </h3>
+  <p class="price">$89.99</p>
+  <p>ShopEasy.</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+</div>
+
+<!-- Product 9 -->
+<div class="product-card">
+  <img src="product9.jpg"alt="Noise Colorfit Icon 2 1.8">
+  <h3>Noise Colorfit Icon 2 1.8</h3>
+  <p class="price">$27.99</p>
+  <p>ShopEasy.</p>
+ <button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+</div>
+
+<!-- Product 10 -->
+<div class="product-card">
+  <img src="product10.jpg" alt="RED TAPE
+Men Slides">
+  <h3>RED TAPE
+Men Slides</h3>
+  <p class="price">$74.99</p>
+  <p>ShopEasy</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+</div>
+
+<!-- Product 11 -->
+<div class="product-card">
+  <img src="product11.jpg" alt="HERCULES Hank 27.5 T Mountain Cycle">
+  <h3>HERCULES Hank 27.5 T Mountain Cycle</h3>
+  <p class="price">$44.99</p>
+  <p>ShopEasy.</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+</div>
+
+<!-- Product 12 -->
+<div class="product-card">
+  <img src="product12.jpg" alt="F FERONS Wireless rechargeable portable Premium bass">
+  <h3>F FERONS Wireless rechargeable portable Premium bass</h3>
+  <p class="price">$99.99</p>
+  <p>ShopEasy.</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+</div>
+
+<!-- Product 13 -->
+<div class="product-card">
+  <img src="product13.jpg" alt="MYFITNESS Chocolate Peanut Butter with Almond Crunch">
+  <h3>MYFITNESS Chocolate Peanut Butter with Almond Crunch</h3>
+  <p class="price">$35.00</p>
+  <p>ShopEasy</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+</div>
+
+<!-- Product 14 -->
+<div class="product-card">
+  <img src="product14.jpg" alt="Get Fresh Premium California Almonds Dry Fruits">
+  <h3>Get Fresh Premium California Almonds Dry Fruits</h3>
+  <p class="price">$59.50</p>
+  <p>ShopEasy.</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+</div>
+
+<!-- Product 15 -->
+<div class="product-card">
+  <img src="product15.jpg" alt="TB Blue
+Men Striped Polo ">
+  <h3>TB Blue
+Men Striped Polo </h3>
+  <p class="price">$24.99</p>
+  <p>ShopEasy.</p>
+<button class="add-to-cart-btn" onclick="showCartPopup()">Add to Cart</button>
+
+</div>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="product-page-2.html" class="next-btn">Next Page →</a>
+  </div>
+<style>
+  .cart-popup {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #00ffff;
+    color: #111;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 0 20px #00ffffaa;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  .cart-popup.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* other styles like .cart-popup, .product-card, etc. */
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+  }
+.magic-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 60px 0 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #00ffff, #ffffff, #00ffff);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineText 5s linear infinite, fadeIn 1s ease forwards;
+  opacity: 0;
+  position: relative;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.magic-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: #00ffff;
+  border-radius: 2px;
+  box-shadow: 0 0 8px #00ffff, 0 0 20px #00ffffaa;
+}
+
+@keyframes shineText {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffffaa;
+}
+.logo-badge {
+  background: rgba(0, 255, 255, 0.1);
+  padding: 10px 24px;
+  border-radius: 50px;
+  box-shadow: 0 0 12px #00ffff55, 0 0 24px #00ffff33 inset;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.logo-badge:hover {
+  box-shadow: 0 0 20px #00ffffaa, 0 0 40px #00ffff55 inset;
+  transform: scale(1.03);
+}
+
+</style>
+
+<div id="cart-popup" class="cart-popup">✔️ Product added to cart!</div>
+<script>
+  function showCartPopup() {
+    const popup = document.getElementById("cart-popup");
+    popup.classList.add("show");
+    setTimeout(() => {
+      popup.classList.remove("show");
+    }, 2500); // hides after 2.5 seconds
+  }
+</script>
+
+
+</body>
+</html>

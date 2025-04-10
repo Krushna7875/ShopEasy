@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Watch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo logo-glow">ShopEasy</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="product-detail">
+    <div class="container detail-grid">
+      <div class="detail-image">
+        <img src="backpack.jpg" alt=" Modern Backpack">
+      </div>
+      <div class="detail-info">
+        <h1>Modern Backpack</h1>
+        <p class="price">$129.99</p>
+        <p class="description">
+          Stay connected and track your health in style. This smart watch features heart rate monitoring,
+          fitness tracking, message notifications, and a sleek water-resistant design.
+        </p>
+        <button class="btn" onclick="addToCart('Smart Watch', 129.99)">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Popup Confirmation -->
+  <div class="cart-popup" id="popup">
+    <div class="cart-content">
+      <span class="close-popup" onclick="closePopup()">&times;</span>
+      <h2>✅ Item Added to Cart!</h2>
+      <p>Product: <span id="popup-product-name"></span></p>
+      <p>Price: $<span id="popup-product-price"></span></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function addToCart(productName, productPrice) {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const item = { name: productName, price: productPrice, quantity: 1 };
+      cart.push(item);
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      // Show popup
+      document.getElementById("popup-product-name").textContent = productName;
+      document.getElementById("popup-product-price").textContent = productPrice;
+      document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+
+    document.addEventListener('click', function(e) {
+      if (e.target.classList.contains('close-popup')) closePopup();
+    });
+  </script>
+</body>
+</html>
