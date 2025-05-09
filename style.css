@@ -942,5 +942,20 @@ body.contact-page {
   50% { transform: translateY(-30px) scale(1.05); }
   100% { transform: translateY(0) scale(1); }
 }
+/* Mobile First (default) */
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .product-card {
+    flex: 1 1 45%;
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+  .product-card {
+    flex: 1 1 30%;
+  }
+}
 
 
